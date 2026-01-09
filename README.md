@@ -39,18 +39,18 @@ When paper is published:
 
 See `UPDATE_PUBLICATION_LINKS.md` for details.
 
-## License
+## Copyright Notice
 
-This project is licensed under a custom license. See the `LICENSE` file for full details.
+This website and its content are protected by copyright. See the `LICENSE` file for full copyright terms and usage restrictions.
 
 ### Permitted Use:
-- ✅ **Educational & Research**: Free use for academic and research purposes
-- ✅ **Personal Use**: Non-commercial personal projects
-- ✅ **Attribution Required**: Must include copyright notice
+- ✅ **Personal Viewing**: You may view and access this website for personal purposes
+- ✅ **Fair Use**: Limited excerpts under fair use principles with attribution
 
 ### Prohibited Use:
-- ❌ **Commercial Use**: Requires explicit written permission
-- ❌ **Redistribution for Profit**: Commercial redistribution not allowed
+- ❌ **Unauthorized Copying**: No reproduction without written permission
+- ❌ **Commercial Use**: Commercial use requires explicit written consent
+- ❌ **Removal of Notices**: Cannot alter or remove copyright notices
 - ❌ **Implied Affiliation**: Cannot imply University of Rochester endorsement
 
 For commercial licensing inquiries, please contact the University of Rochester Medical Center.
