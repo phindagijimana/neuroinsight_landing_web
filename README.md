@@ -46,8 +46,7 @@ See `UPDATE_PUBLICATION_LINKS.md` for details.
 This website and its content are protected by copyright. See the `LICENSE` file for full copyright terms and usage restrictions.
 
 ### Permitted Use:
-- ✅ **Personal Viewing**: You may view and access this website for personal purposes
-- ✅ **Fair Use**: Limited excerpts under fair use principles with attribution
+- ✅ **Personal Viewing**: You may view the website, but you can not download the code for reproduction.
 
 ### Prohibited Use:
 - ❌ **Unauthorized Copying**: No reproduction without written permission
