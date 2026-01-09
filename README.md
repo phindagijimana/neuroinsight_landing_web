@@ -39,7 +39,9 @@ When paper is published:
 
 See `UPDATE_PUBLICATION_LINKS.md` for details.
 
-## Copyright Notice
+## Copyright
+
+© 2025 University of Rochester. All rights reserved.
 
 This website and its content are protected by copyright. See the `LICENSE` file for full copyright terms and usage restrictions.
 
