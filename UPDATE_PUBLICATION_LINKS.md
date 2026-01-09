@@ -1,10 +1,10 @@
-# 🔗 Updating Publication Links
+# Updating Publication Links
 
 ## When Your Paper is Published
 
 Follow these steps to update the placeholder links in the NeuroInsight landing page with your actual publication information.
 
-## 📝 Step 1: Locate the Research Section
+## Step 1: Locate the Research Section
 
 In `research.html`, find the main publication section (around line 50-100):
 
@@ -13,7 +13,7 @@ In `research.html`, find the main publication section (around line 50-100):
 <section id="research" class="py-20 bg-white">
 ```
 
-## 🔗 Step 2: Update the Main Paper Link
+## Step 2: Update the Main Paper Link
 
 **Current placeholder:**
 ```html
@@ -29,7 +29,7 @@ In `research.html`, find the main publication section (around line 50-100):
    class="inline-flex items-center gap-2 bg-blue-800 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-900 transition">
 ```
 
-## 📄 Step 3: Update the Abstract Link
+## Step 3: Update the Abstract Link
 
 **Current placeholder:**
 ```html
@@ -45,7 +45,7 @@ In `research.html`, find the main publication section (around line 50-100):
    class="inline-flex items-center gap-2 border-2 border-blue-800 text-blue-800 px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 hover:text-white transition">
 ```
 
-## 📖 Step 4: Update Paper Information
+## Step 4: Update Paper Information
 
 **Current placeholder text:**
 ```html
@@ -80,7 +80,7 @@ If you have additional publications or resources, update these placeholder links
 </a>
 ```
 
-## 🎯 Common Publication URLs
+## Common Publication URLs
 
 ### Academic Journals
 - **PubMed**: `https://pubmed.ncbi.nlm.nih.gov/PMCxxxxx/`
@@ -92,13 +92,13 @@ If you have additional publications or resources, update these placeholder links
 - **arXiv**: `https://arxiv.org/abs/xxxxx`
 - **medRxiv**: `https://www.medrxiv.org/content/10.xxxx`
 
-## ✅ Step 6: Remove Placeholder Notice
+## Step 6: Remove Placeholder Notice
 
 **Remove this section after updating:**
 ```html
 <div class="mt-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-800">
     <p class="text-sm text-blue-800 font-medium">
-        📝 <strong>Placeholder Link:</strong> Replace "#" with the actual DOI or publication URL when available.
+        Placeholder Link: Replace "#" with the actual DOI or publication URL when available.
     </p>
     <p class="text-sm text-gray-600 mt-1">
         Example: "https://doi.org/10.xxxx/neuroinsight-paper" or "https://pubmed.ncbi.nlm.nih.gov/xxxxx/"
@@ -106,7 +106,7 @@ If you have additional publications or resources, update these placeholder links
 </div>
 ```
 
-## 🚀 Step 7: Test the Links
+## Step 7: Test the Links
 
 After updating:
 1. Start the local server: `python3 -m http.server 8080`
@@ -115,7 +115,7 @@ After updating:
 4. Test both "Read Full Paper" and "View Abstract" links
 5. Verify they open your publication correctly
 
-## 📋 Checklist
+## Checklist
 
 - [ ] Updated main paper link with DOI
 - [ ] Updated abstract link with PubMed/PMC URL
@@ -124,7 +124,7 @@ After updating:
 - [ ] Tested links work correctly
 - [ ] Updated README.md and PROJECT_DESCRIPTION.md if needed
 
-## 💡 Tips
+## Tips
 
 1. **Use DOI when possible** - it's permanent and reliable
 2. **Include both full paper and abstract links** if available
@@ -132,10 +132,10 @@ After updating:
 4. **Test on multiple browsers** to ensure links work
 5. **Consider adding publication date** to the description
 
-## 📞 Need Help?
+## Need Help?
 
 If you need assistance updating the links or formatting the publication information, check the README.md file for contact information or refer to the project documentation.
 
 ---
 
-**Congratulations on your publication! 🎉**
+Congratulations on your publication!

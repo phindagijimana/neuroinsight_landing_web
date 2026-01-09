@@ -1,4 +1,4 @@
-🧠 NEUROINSIGHT LANDING PAGE - VISUAL LAYOUT
+  NEUROINSIGHT LANDING PAGE - VISUAL LAYOUT
 ==============================================
 
 ┌─────────────────────────────────────────────────┐
@@ -13,21 +13,21 @@
 │ HERO SECTION (Gradient background)             │
 │                                                 │
 │  ┌─────────────────────────────────────────┐    │
-│  │ 🧠 AUTOMATED HIPPOCAMPAL               │    │
+│  │   AUTOMATED HIPPOCAMPAL               │    │
 │  │    VOLUMETRIC ANALYSIS                 │    │
 │  │                                         │    │
 │  │ Advanced neuroimaging platform for      │    │
 │  │ T1-weighted MRI analysis...             │    │
 │  │                                         │    │
-│  │ ⚡ Fast automated segmentation           │    │
-│  │ 📊 Precise asymmetry calculation         │    │
-│  │ ✅ Clinical-grade HS classification      │    │
+│  │   Fast automated segmentation           │    │
+│  │   Precise asymmetry calculation         │    │
+│  │   Clinical-grade HS classification      │    │
 │  │                                         │    │
 │  │ [Learn More] [View on GitHub]           │    │
 │  └─────────────────────────────────────────┘    │
 │                ┌─────────────────────┐          │
 │                │    [Animated Brain] │          │
-│                │     🧠 L     R 🧠    │          │
+│                │       L     R      │          │
 │                │    Hippocampal      │          │
 │                │    Regions with     │          │
 │                │    Segmentation     │          │
@@ -37,15 +37,15 @@
 ┌─────────────────────────────────────────────────┐
 │ FEATURES SECTION (White background)            │
 │                                                 │
-│ 🧬 FreeSurfer Integration     📊 Volumetric Analysis
+│ 🧬 FreeSurfer Integration       Volumetric Analysis
 │ Industry-standard automated   Precise measurement of
 │ cortical reconstruction       left/right volumes
 │                                                 │
-│ 🎯 Asymmetry Detection        🔒 HIPAA Compliant
+│   Asymmetry Detection          HIPAA Compliant
 │ Automated calculation of      Local processing ensures
 │ hippocampal asymmetry         patient data privacy
 │                                                 │
-│ ⚡ Rapid Processing           ✅ Clinical Validation
+│   Rapid Processing             Clinical Validation
 │ Automated pipeline delivers   Validated thresholds for
 │ results in hours              HS detection accuracy
 └─────────────────────────────────────────────────┘
@@ -86,18 +86,18 @@
 │ reserved. FreeSurfer requires separate license. │
 └─────────────────────────────────────────────────┘
 
-🎨 COLOR SCHEME:
+  COLOR SCHEME:
    Primary: #003d7a (Deep Navy Blue)
    Accents: #0066cc, #1e40af, #94a3b8
    Background: White to light blue gradients
    Professional medical aesthetic
 
-✨ INTERACTIVE ELEMENTS:
+  INTERACTIVE ELEMENTS:
    • Animated brain with pulsing hippocampus
    • Smooth scrolling navigation
    • Hover effects on buttons and cards
    • Responsive design for all devices
 
-🔗 EXTERNAL LINKS:
+  EXTERNAL LINKS:
    • GitHub: https://github.com/phindagijimana/neuroinsight_local
    • URMC: https://www.urmc.rochester.edu/

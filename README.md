@@ -46,13 +46,13 @@ See `UPDATE_PUBLICATION_LINKS.md` for details.
 This website and its content are protected by copyright. See the `LICENSE` file for full copyright terms and usage restrictions.
 
 ### Permitted Use:
-- ✅ **Personal Viewing**: You may view the website, but you can not download the code for reproduction.
+- Personal viewing: You may view the website, but you can not download the code for reproduction.
 
 ### Prohibited Use:
-- ❌ **Unauthorized Copying**: No reproduction without written permission
-- ❌ **Commercial Use**: Commercial use requires explicit written consent
-- ❌ **Removal of Notices**: Cannot alter or remove copyright notices
-- ❌ **Implied Affiliation**: Cannot imply University of Rochester endorsement
+- Unauthorized copying: No reproduction without written permission
+- Commercial use: Commercial use requires explicit written consent
+- Removal of notices: Cannot alter or remove copyright notices
+- Implied affiliation: Cannot imply University of Rochester endorsement
 
 For commercial licensing inquiries, please contact the University of Rochester Medical Center.
 

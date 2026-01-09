@@ -5,7 +5,7 @@
 
 set -e
 
-echo "🚀 NeuroInsight Landing Page Deployment"
+echo "NeuroInsight Landing Page Deployment"
 echo "======================================"
 
 # Colors for output
