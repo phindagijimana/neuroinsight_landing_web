@@ -13,6 +13,7 @@ Professional landing website for NeuroInsight - automated hippocampal volumetric
 - `index.html` - Main landing page
 - `research.html` - Research publications page
 - `styles.css` - Custom styling
+- `LICENSE` - Usage license and permissions
 - `UPDATE_PUBLICATION_LINKS.md` - Publication link guide
 
 ## Features
@@ -37,6 +38,22 @@ When paper is published:
 3. Update paper title and description
 
 See `UPDATE_PUBLICATION_LINKS.md` for details.
+
+## License
+
+This project is licensed under a custom license. See the `LICENSE` file for full details.
+
+### Permitted Use:
+- ✅ **Educational & Research**: Free use for academic and research purposes
+- ✅ **Personal Use**: Non-commercial personal projects
+- ✅ **Attribution Required**: Must include copyright notice
+
+### Prohibited Use:
+- ❌ **Commercial Use**: Requires explicit written permission
+- ❌ **Redistribution for Profit**: Commercial redistribution not allowed
+- ❌ **Implied Affiliation**: Cannot imply University of Rochester endorsement
+
+For commercial licensing inquiries, please contact the University of Rochester Medical Center.
 
 ---
 
