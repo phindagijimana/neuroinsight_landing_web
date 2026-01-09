@@ -5,13 +5,12 @@ Professional landing website for NeuroInsight - automated hippocampal volumetric
 ## Live Site
 
 - **URL**: https://phindagijimana.github.io/neuroinsight_landing_web/
-- **Home Page**: https://phindagijimana.github.io/neuroinsight_landing_web/index.html
-- **Research Page**: https://phindagijimana.github.io/neuroinsight_landing_web/research.html
+- **Home Page**: https://phindagijimana.github.io/neuroinsight_landing_web/
+- **Research Section**: https://phindagijimana.github.io/neuroinsight_landing_web/#research
 
 ## Files
 
-- `index.html` - Main landing page
-- `research.html` - Research publications page
+- `index.html` - Main landing page with all sections
 - `styles.css` - Custom styling
 - `LICENSE` - Usage license and permissions
 - `UPDATE_PUBLICATION_LINKS.md` - Publication link guide
@@ -33,9 +32,10 @@ Professional landing website for NeuroInsight - automated hippocampal volumetric
 ## Update Research Links
 
 When paper is published:
-1. Edit `research.html`
-2. Replace `href="#"` with actual DOI
-3. Update paper title and description
+1. Edit `index.html`
+2. Find the Research section (around line 395)
+3. Replace `href="#"` with actual DOI
+4. Update paper title and description
 
 See `UPDATE_PUBLICATION_LINKS.md` for details.
 
