@@ -59,4 +59,6 @@ For commercial licensing inquiries, please contact the University of Rochester M
 
 ---
 
+[LICENSE](LICENSE)
+
 Built by University of Rochester Medical Center
