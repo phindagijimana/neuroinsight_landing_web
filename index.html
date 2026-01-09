@@ -98,10 +98,10 @@
                     </div>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <a href="#features" class="text-gray-700 hover:neuro-blue-text font-medium transition">Features</a>
-                    <a href="#about" class="text-gray-700 hover:neuro-blue-text font-medium transition">About</a>
-                    <a href="#research" class="text-gray-700 hover:neuro-blue-text font-medium transition">Research</a>
-                    <a href="#contact" class="text-gray-700 hover:neuro-blue-text font-medium transition">Contact</a>
+                    <button data-section="features" class="nav-link text-gray-700 hover:neuro-blue-text font-medium transition cursor-pointer">Features</button>
+                    <button data-section="about" class="nav-link text-gray-700 hover:neuro-blue-text font-medium transition cursor-pointer">About</button>
+                    <button data-section="research" class="nav-link text-gray-700 hover:neuro-blue-text font-medium transition cursor-pointer">Research</button>
+                    <button data-section="contact" class="nav-link text-gray-700 hover:neuro-blue-text font-medium transition cursor-pointer">Contact</button>
                     <a href="https://github.com/phindagijimana/neuroinsight_local"
                        target="_blank"
                        class="neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium neuro-blue-hover transition flex items-center gap-2">
@@ -660,6 +660,34 @@
             card.style.transform = 'translateY(20px)';
             card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(card);
+        });
+
+        // Smooth navigation without URL hash changes
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+
+                    const sectionId = this.getAttribute('data-section');
+                    const targetSection = document.getElementById(sectionId);
+
+                    if (targetSection) {
+                        // Smooth scroll to section
+                        targetSection.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+
+                        // Optional: Add visual feedback
+                        this.style.color = '#003d7a';
+                        setTimeout(() => {
+                            this.style.color = '';
+                        }, 300);
+                    }
+                });
+            });
         });
     </script>
 </body>
