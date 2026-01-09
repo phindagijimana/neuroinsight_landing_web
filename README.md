@@ -2,28 +2,17 @@
 
 Professional landing website for NeuroInsight - automated hippocampal volumetric analysis platform for T1-weighted MRI scans.
 
-## Quick Start
+## Live Site
 
-### View Live
-- **Home**: Open `index.html` in browser
-- **Research**: Open `research.html` in browser
-
-### Deploy
-```bash
-# Local server
-python3 -m http.server 8080
-
-# GitHub Pages (already configured)
-# Repository: neuroinsight_landing_web
-# URL: https://phindagijimana.github.io/neuroinsight_landing_web/
-```
+- **URL**: https://phindagijimana.github.io/neuroinsight_landing_web/
+- **Home Page**: https://phindagijimana.github.io/neuroinsight_landing_web/index.html
+- **Research Page**: https://phindagijimana.github.io/neuroinsight_landing_web/research.html
 
 ## Files
 
 - `index.html` - Main landing page
 - `research.html` - Research publications page
 - `styles.css` - Custom styling
-- `deploy.sh` - Deployment script
 - `UPDATE_PUBLICATION_LINKS.md` - Publication link guide
 
 ## Features
