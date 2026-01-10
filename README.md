@@ -6,7 +6,7 @@ Professional landing website for NeuroInsight - automated hippocampal volumetric
 
 - **URL**: https://phindagijimana.github.io/neuroinsight_landing_web/
 - **Home Page**: https://phindagijimana.github.io/neuroinsight_landing_web/
-- **Research Page**: https://phindagijimana.github.io/neuroinsight_landing_web/research.html
+- **Research**: Modal overlay (accessed via menu, keeps clean URL)
 - **Other Sections**: Clean URL navigation (no hash changes)
 
 ## Files
