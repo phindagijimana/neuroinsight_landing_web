@@ -4,8 +4,12 @@
 Professional landing website for NeuroInsight - automated hippocampal volumetric analysis platform for T1-weighted MRI scans.
 
 ## Pages
-- `index.html` - Main landing page with hero, features, about, and contact sections
-- `research.html` - Dedicated research publications page
+- `index.html` - Single-page website with all sections:
+  - Hero section with animated brain
+  - Features section
+  - About section
+  - Research publications section
+  - Contact section
 
 ## Key Features
 - Automated FreeSurfer integration for cortical reconstruction
