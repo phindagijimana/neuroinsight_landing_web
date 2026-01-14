@@ -10,30 +10,99 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Inter', sans-serif; }
-        .neuro-blue-text { color: #003d7a; }
-        .neuro-blue-bg { background-color: #003d7a; }
-        .neuro-blue-hover:hover { background-color: #002850; }
-        .neuro-blue-border { border-color: #003d7a; }
-        .neuro-blue-light-bg { background-color: rgba(0, 61, 122, 0.1); }
-        .neuro-blue-light-border { border-color: rgba(0, 61, 122, 0.2); }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* Custom blue theme - #003d7a */
+        .neuro-blue {
+            background-color: #003d7a;
+        }
+
+        .neuro-blue-text {
+            color: #003d7a;
+        }
+
+        .neuro-blue-bg {
+            background-color: #003d7a;
+        }
+
+        .neuro-blue-hover:hover {
+            background-color: #002850;
+        }
+
+        .neuro-blue-border {
+            border-color: #003d7a;
+        }
+
+        .neuro-blue-light-bg {
+            background-color: rgba(0, 61, 122, 0.1);
+        }
+
+        .neuro-blue-light-border {
+            border-color: rgba(0, 61, 122, 0.2);
+        }
+
+        /* Gradient backgrounds */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
+        }
+
+        /* Pulse animation for brain elements */
+        @keyframes brainPulse {
+            0%, 100% { opacity: 0.6; }
+            50% { opacity: 0.9; }
+        }
+
+        .brain-pulse {
+            animation: brainPulse 3s ease-in-out infinite;
+        }
+
+        .brain-pulse-delayed {
+            animation: brainPulse 3s ease-in-out infinite;
+            animation-delay: 1.5s;
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f5f9;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #003d7a;
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #002850;
+        }
     </style>
 </head>
-<body class="bg-gray-50">
+<body class="hero-gradient">
     <!-- Navigation -->
-    <nav class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+    <nav class="bg-white shadow-lg border-b neuro-blue-light-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
+            <div class="flex justify-between h-16">
                 <div class="flex items-center">
                     <div class="flex-shrink-0">
-                        <a href="index.html" class="text-2xl font-bold neuro-blue-text">NeuroInsight</a>
+                        <h1 class="text-2xl font-bold neuro-blue-text">NeuroInsight</h1>
                     </div>
                 </div>
                 <div class="flex items-center space-x-8">
-                    <a href="index.html#features" class="text-gray-700 hover:neuro-blue-text font-medium transition">Features</a>
-                    <a href="index.html#about" class="text-gray-700 hover:neuro-blue-text font-medium transition">About</a>
-                    <a href="#research" class="text-gray-700 hover:neuro-blue-text font-medium transition">Research</a>
-                    <a href="index.html#contact" class="text-gray-700 hover:neuro-blue-text font-medium transition">Contact</a>
+                    <a href="index.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">Home</a>
+                    <a href="index.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">Features</a>
+                    <a href="index.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">About</a>
+                    <a href="research.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">Research</a>
+                    <a href="index.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">Contact</a>
                     <a href="https://github.com/phindagijimana/neuroinsight_local"
                        target="_blank"
                        class="neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium neuro-blue-hover transition flex items-center gap-2">
@@ -42,10 +111,280 @@
                         </svg>
                         GitHub
                     </a>
+                    <a href="https://www.urmc.rochester.edu/"
+                       target="_blank"
+                       class="neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium neuro-blue-hover transition">
+                        URMC Access
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
+
+    <!-- Research Section -->
+    <section id="research" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <div class="grid lg:grid-cols-2 gap-8 items-center">
+                <!-- Left Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            Automated
+                            <span class="neuro-blue-text">Hippocampal</span>
+                            Volumetric Analysis
+                        </h1>
+                        <p class="text-xl text-gray-600 leading-relaxed">
+                            Advanced neuroimaging platform for processing T1-weighted MRI scans,
+                            computing hippocampal asymmetry indices, and detecting hippocampal sclerosis
+                            with clinical-grade precision and efficiency.
+                        </p>
+                    </div>
+
+                    <!-- Key Features -->
+                    <div class="grid grid-cols-1 gap-4">
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg p-3 rounded-lg">
+                                <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Automated FreeSurfer segmentation pipeline</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg p-3 rounded-lg">
+                                <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Precise asymmetry index calculations</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg p-3 rounded-lg">
+                                <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                                </svg>
+                            </div>
+                            <span class="text-gray-700 font-medium">Clinical-grade HS classification</span>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#features"
+                           class="neuro-blue-bg text-white px-8 py-4 rounded-xl font-semibold text-lg neuro-blue-hover transition shadow-lg hover:shadow-xl text-center">
+                            Learn More
+                        </a>
+                        <a href="https://github.com/phindagijimana/neuroinsight_local"
+                           target="_blank"
+                           class="border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-xl font-semibold text-lg hover:neuro-blue-bg hover:text-white transition text-center">
+                            View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content - Brain Visualization -->
+                <div class="relative">
+                    <!-- Background decorative elements -->
+                    <div class="absolute top-10 right-10 w-72 h-72 bg-blue-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 brain-pulse"></div>
+                    <div class="absolute bottom-10 left-10 w-72 h-72 bg-blue-300 rounded-full mix-blend-multiply filter blur-3xl opacity-30 brain-pulse-delayed"></div>
+
+                    <!-- Brain SVG -->
+                    <div class="relative bg-white rounded-2xl shadow-2xl p-8 border neuro-blue-light-border">
+                        <svg viewBox="0 0 400 400" class="w-full h-auto">
+                            <defs>
+                                <linearGradient id="brainGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#003d7a" stop-opacity="0.8" />
+                                    <stop offset="100%" stop-color="#0066cc" stop-opacity="0.6" />
+                                </linearGradient>
+                            </defs>
+
+                            <!-- Brain outline -->
+                            <ellipse cx="200" cy="200" rx="150" ry="170" fill="#f8fafc" stroke="#003d7a" stroke-width="3"/>
+
+                            <!-- Midline -->
+                            <line x1="200" y1="30" x2="200" y2="370" stroke="#94a3b8" stroke-width="2" stroke-dasharray="5,5" opacity="0.5"/>
+
+                            <!-- Neural pathways - Left side -->
+                            <path d="M 80 150 Q 100 100, 150 120 T 180 160" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+                            <path d="M 70 200 Q 90 180, 130 190 T 170 210" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+                            <path d="M 85 250 Q 110 230, 150 245 T 180 270" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+
+                            <!-- Neural pathways - Right side -->
+                            <path d="M 320 150 Q 300 100, 250 120 T 220 160" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+                            <path d="M 330 200 Q 310 180, 270 190 T 230 210" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+                            <path d="M 315 250 Q 290 230, 250 245 T 220 270" fill="none" stroke="#003d7a" stroke-width="2" opacity="0.7"/>
+
+                            <!-- Left Hippocampus - Animated -->
+                            <ellipse cx="140" cy="260" rx="25" ry="50" fill="url(#brainGradient)" opacity="0.8" class="brain-pulse">
+                                <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite" />
+                            </ellipse>
+                            <text x="140" y="335" fill="#003d7a" font-size="16" font-weight="bold" text-anchor="middle">L</text>
+
+                            <!-- Right Hippocampus - Animated with delay -->
+                            <ellipse cx="260" cy="260" rx="23" ry="48" fill="url(#brainGradient)" opacity="0.8" class="brain-pulse-delayed">
+                                <animate attributeName="opacity" values="0.6;0.9;0.6" dur="3s" repeatCount="indefinite" begin="0.5s" />
+                            </ellipse>
+                            <text x="260" y="335" fill="#003d7a" font-size="16" font-weight="bold" text-anchor="middle">R</text>
+
+                            <!-- Measurement circles -->
+                            <circle cx="140" cy="260" r="55" fill="none" stroke="#0066cc" stroke-width="2" stroke-dasharray="3,3" opacity="0.5"/>
+                            <circle cx="260" cy="260" r="55" fill="none" stroke="#0066cc" stroke-width="2" stroke-dasharray="3,3" opacity="0.5"/>
+                        </svg>
+
+                        <div class="mt-4 text-center">
+                            <p class="text-sm text-gray-500">Hippocampal Regions with Automated Segmentation</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Advanced Neuroimaging Platform</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    NeuroInsight delivers clinical-grade automated analysis of T1-weighted MRI scans,
+                    providing precise hippocampal volumetry and asymmetry assessment for neurological research and clinical applications.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature Cards -->
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">FreeSurfer Integration</h3>
+                    <p class="text-gray-600">Industry-standard automated cortical reconstruction and subcortical segmentation for reliable hippocampal identification.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Volumetric Analysis</h3>
+                    <p class="text-gray-600">Precise measurement of left and right hippocampal volumes in mm³ with statistical reliability assessment.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Asymmetry Detection</h3>
+                    <p class="text-gray-600">Automated calculation of hippocampal asymmetry indices with validated clinical thresholds for HS diagnosis.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">HIPAA Compliant</h3>
+                    <p class="text-gray-600">Ensured security and privacy for patient data since all processing happens locally without external data transmission.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Rapid Processing</h3>
+                    <p class="text-gray-600">Automated pipeline delivers results faster without manual intervention, typically completing analysis within hours.</p>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                    <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Clinical Validation</h3>
+                    <p class="text-gray-600">Validated asymmetry thresholds for hippocampal sclerosis detection with clinical accuracy and reliability.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-12 hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">What is NeuroInsight?</h2>
+                    <div class="space-y-3 text-lg text-gray-600">
+                        <p>
+                            NeuroInsight automates neuroimaging analysis with clinical-grade precision. Currently focused on T1-weighted MRI hippocampal volumetry, it provides automated detection of hippocampal sclerosis (HS) for neurological research and clinical applications.
+                        </p>
+                        <p>
+                            Using FreeSurfer's segmentation methods, NeuroInsight identifies hippocampal regions, calculates asymmetry indices, and classifies pathology. Future expansion will include additional neuroimaging analysis solutions.
+                        </p>
+                        <p>
+                            Built for security and privacy, all processing happens locally with HIPAA compliance. The automated pipeline delivers results significantly faster than manual methods.
+                        </p>
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="https://github.com/phindagijimana/neuroinsight_local"
+                           target="_blank"
+                           class="inline-flex items-center gap-2 neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                            Explore Source Code
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl p-8 shadow-xl border neuro-blue-light-border">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 text-center">Processing Pipeline</h3>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg neuro-blue-text font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">File Validation</h4>
+                                <p class="text-gray-600 text-sm">T1-weighted MRI validation and format checking</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg neuro-blue-text font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">FreeSurfer Segmentation</h4>
+                                <p class="text-gray-600 text-sm">Automated cortical reconstruction and hippocampal ROI identification</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg neuro-blue-text font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Statistical Analysis</h4>
+                                <p class="text-gray-600 text-sm">Volume measurements and asymmetry index calculations</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="neuro-blue-light-bg neuro-blue-text font-bold w-8 h-8 rounded-full flex items-center justify-center text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Visualization & Reports</h4>
+                                <p class="text-gray-600 text-sm">2D/3D brain visualization and PDF report generation</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Research Section -->
     <section id="research" class="py-16 bg-white">
@@ -213,6 +552,7 @@
         </div>
     </section>
 
+
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-8">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -224,27 +564,20 @@
                     </p>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Research</h4>
+                    <h4 class="font-semibold mb-4">Resources</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="#research" class="hover:text-white transition">Publications</a></li>
-                        <li><a href="#" class="hover:text-white transition">Clinical Validation</a></li>
-                        <li><a href="#" class="hover:text-white transition">Technical Documentation</a></li>
+                        <li><a href="https://github.com/phindagijimana/neuroinsight_local" target="_blank" class="hover:text-white transition">Source Code</a></li>
+                        <li><a href="https://surfer.nmr.mgh.harvard.edu/" target="_blank" class="hover:text-white transition">FreeSurfer</a></li>
+                        <li><a href="https://www.urmc.rochester.edu/" target="_blank" class="hover:text-white transition">URMC</a></li>
                     </ul>
                 </div>
                 <div>
-                    <h4 class="font-semibold mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="https://github.com/phindagijimana/neuroinsight_local" target="_blank" class="text-gray-400 hover:text-white transition">
-                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                        </a>
-                        <a href="https://www.urmc.rochester.edu/" target="_blank" class="text-gray-400 hover:text-white transition">
-                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-                            </svg>
-                        </a>
-                    </div>
+                    <h4 class="font-semibold mb-4">Contact</h4>
+                    <p class="text-gray-400">
+                        University of Rochester<br>
+                        Medical Center<br>
+                        Rochester, NY
+                    </p>
                 </div>
             </div>
             <div class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
@@ -252,6 +585,47 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Add intersection observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe feature cards for animations
+        document.querySelectorAll('.bg-gradient-to-br').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(card);
+        });
+
+
+    </script>
 
     <script>
         // Change URL from research.html to #research after page loads
@@ -262,5 +636,8 @@
             }
         });
     </script>
+
 </body>
 </html>
+<!-- Deployment trigger: Sat Jan 10 00:29:07 UTC 2026 -->
+<!-- Workflow trigger: 2026-01-10 01:27:34 -->
