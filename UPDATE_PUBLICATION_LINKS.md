@@ -64,7 +64,7 @@ In `research.html`, find the main publication section (around line 50-100):
 </p>
 ```
 
-## 📚 Step 5: Update Additional Resources (Optional)
+## Step 5: Update Additional Resources (Optional)
 
 If you have additional publications or resources, update these placeholder links:
 
