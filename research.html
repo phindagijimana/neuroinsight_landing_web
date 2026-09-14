@@ -98,23 +98,23 @@
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="text-2xl font-bold neuro-blue-text">NeuroInsight</a>
                 <div class="hidden md:flex items-center space-x-4 lg:space-x-5 text-sm lg:text-base">
+                    <a href="index.html#publication" class="nav-link">From the paper</a>
                     <a href="index.html#workflows" class="nav-link">Workflows</a>
-                    <a href="index.html#features" class="nav-link">Features</a>
                     <a href="index.html#about" class="nav-link">About</a>
                     <a href="research.html" class="nav-link font-semibold neuro-blue-text">Research</a>
-                    <a href="index.html#contact" class="nav-link">Get started</a>
-                    <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Download</a>
+                    <a href="index.html#choose-path" class="nav-link">Get started</a>
+                    <a href="index.html#workflows" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Explore workflows</a>
                 </div>
                 <button type="button" id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
                 </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2 border-t border-gray-100 pt-3">
+                <a href="index.html#publication" class="block nav-link py-2">From the paper</a>
                 <a href="index.html#workflows" class="block nav-link py-2">Workflows</a>
-                <a href="index.html#features" class="block nav-link py-2">Features</a>
                 <a href="index.html#about" class="block nav-link py-2">About</a>
                 <a href="research.html" class="block nav-link py-2 font-semibold">Research</a>
-                <a href="index.html#contact" class="block nav-link py-2">Get started</a>
+                <a href="index.html#choose-path" class="block nav-link py-2">Get started</a>
                 <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="block neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium text-center">Download NeuroInsight-AutoHS</a>
             </div>
         </div>
@@ -127,9 +127,31 @@
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Research & Publications</h1>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
                     Publications describe the <strong>AutoHS</strong> workflow on the <strong>NeuroInsight</strong> platform.
-                    Cite the paper for the method; use <strong>NeuroInsight-AutoHS</strong> or the AutoHS BIDS App (incoming) CLI to reproduce results.
+                    Cite the paper for the method; run the same method as the <strong>AutoHS</strong> workflow or the <strong>NeuroInsight-AutoHS</strong> application.
                 </p>
             </div>
+
+            <!-- Software from the paper (quick links for readers) -->
+            <div id="software-from-paper" class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
+                <a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer"
+                   class="block bg-white rounded-2xl p-6 shadow-lg border-2 neuro-blue-light-border hover:shadow-xl transition">
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Workflow</p>
+                    <h2 class="text-2xl font-bold text-gray-900 mt-1 mb-2">AutoHS</h2>
+                    <p class="text-gray-600 text-sm">BIDS App (incoming) CLI &amp; pipeline from the paper → GitHub &amp; Read the Docs</p>
+                    <span class="inline-block mt-4 neuro-blue-text font-semibold text-sm">Open AutoHS →</span>
+                </a>
+                <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer"
+                   class="block bg-white rounded-2xl p-6 shadow-lg border-2 neuro-blue-light-border hover:shadow-xl transition">
+                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Application</p>
+                    <h2 class="text-2xl font-bold text-gray-900 mt-1 mb-2">NeuroInsight-AutoHS</h2>
+                    <p class="text-gray-600 text-sm">Web/desktop app on NeuroInsight—same AutoHS method, GUI &amp; PDF reports</p>
+                    <span class="inline-block mt-4 neuro-blue-text font-semibold text-sm">Download app →</span>
+                </a>
+            </div>
+            <p class="text-center text-sm text-gray-500 mb-12">
+                <a href="index.html#publication" class="neuro-blue-text underline">Same overview on the NeuroInsight home page</a>
+                · <a href="https://autohs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="neuro-blue-text underline">AutoHS documentation</a>
+            </p>
 
             <!-- Main Publication -->
             <div class="bg-gradient-to-r from-blue-50 to-white rounded-2xl p-8 shadow-lg border neuro-blue-light-border mb-12">
@@ -179,10 +201,22 @@
                             </div>
                         </div>
 
+                        <div class="grid sm:grid-cols-2 gap-3 mb-3">
+                            <a href="https://github.com/phindagijimana/AutoHS"
+                               target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center justify-center gap-2 neuro-blue-bg text-white px-6 py-4 rounded-lg font-semibold neuro-blue-hover transition">
+                                AutoHS workflow (GitHub)
+                            </a>
+                            <a href="https://github.com/phindagijimana/neuroinsight_local/releases"
+                               target="_blank" rel="noopener noreferrer"
+                               class="inline-flex items-center justify-center gap-2 neuro-blue-bg text-white px-6 py-4 rounded-lg font-semibold neuro-blue-hover transition">
+                                NeuroInsight-AutoHS (download)
+                            </a>
+                        </div>
                         <div class="flex flex-col sm:flex-row gap-4">
                             <a href="https://doi.org/10.1093/braincomms/fcag320"
                                target="_blank" rel="noopener noreferrer"
-                               class="inline-flex items-center justify-center gap-2 neuro-blue-bg text-white px-8 py-4 rounded-lg font-semibold neuro-blue-hover transition flex-1">
+                               class="inline-flex items-center justify-center gap-2 border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition flex-1">
                                 Read full paper (DOI)
                             </a>
                             <a href="https://github.com/phindagijimana/AutoHS/blob/main/VALIDATION.md"
