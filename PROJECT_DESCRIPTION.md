@@ -12,7 +12,7 @@ Marketing and orientation site for **NeuroInsight**—a research platform for ne
 ## Key messages
 
 - NeuroInsight = platform (more workflows planned)
-- AutoHS = citable workflow / BIDS App
+- AutoHS = citable workflow / BIDS App (incoming; not yet on official directory)
 - NeuroInsight-AutoHS = web & desktop application
 - Research software; local processing; not FDA-cleared
 
