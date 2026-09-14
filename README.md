@@ -7,6 +7,10 @@ Public site for the **NeuroInsight** platform—automated neuroimaging **workflo
 - **Home:** https://phindagijimana.github.io/neuroinsight_landing_web/
 - **Research:** https://phindagijimana.github.io/neuroinsight_landing_web/research.html
 
+## Documentation map
+
+**[DOCUMENTATION.md](DOCUMENTATION.md)** — canonical links for all repos (avoid duplicating long guides in READMEs).
+
 ## Platform naming
 
 | Layer | Name | Link |
