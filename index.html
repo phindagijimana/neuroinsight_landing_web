@@ -9,26 +9,22 @@
     <meta property="og:description" content="Research platform for neuroimaging workflows. AutoHS hippocampal asymmetry; NeuroInsight-AutoHS application.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://phindagijimana.github.io/neuroinsight_landing_web/">
-    <meta name="theme-color" content="#003d7a">
+    <meta name="theme-color" content="#f8fafc">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon.svg">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        html {
-            background-color: #003d7a;
-        }
-
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #003d7a;
-            min-height: 100vh;
         }
 
-        .page-hero {
-            background: linear-gradient(165deg, #003d7a 0%, #002850 50%, #003d7a 100%);
-            color: #f8fafc;
+        /* Gradient backgrounds */
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
         }
 
         /* Custom blue theme - #003d7a */
@@ -86,7 +82,7 @@
         }
 
         ::-webkit-scrollbar-track {
-            background: #002850;
+            background: #f1f5f9;
         }
 
         ::-webkit-scrollbar-thumb {
@@ -99,7 +95,7 @@
         }
     </style>
 </head>
-<body>
+<body class="hero-gradient">
     <!-- Navigation -->
     <nav class="bg-white shadow-lg border-b neuro-blue-light-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -129,23 +125,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="page-hero relative overflow-hidden">
+    <section class="relative overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <div class="grid lg:grid-cols-2 gap-8 items-center">
                 <!-- Left Content -->
                 <div class="space-y-8">
                     <div class="space-y-4">
-                        <h1 class="hero-title text-5xl lg:text-6xl font-bold leading-tight">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                             Automated
-                            <span class="hero-title-accent">Neuroimaging</span>
+                            <span class="neuro-blue-text">Neuroimaging</span>
                             Workflows
                         </h1>
-                        <p class="hero-lead text-xl leading-relaxed">
+                        <p class="text-xl text-gray-600 leading-relaxed">
                             <strong>NeuroInsight</strong> is a research platform for reproducible neuroimaging pipelines.
                             <strong>AutoHS</strong> is the hippocampal asymmetry workflow for T1-weighted MRI;
                             <strong>NeuroInsight-AutoHS</strong> is the application that runs AutoHS on your infrastructure—with local processing and open source releases.
                         </p>
-                        <p class="hero-muted text-sm leading-relaxed">
+                        <p class="text-sm text-gray-500 leading-relaxed">
                             Research software only—not cleared or approved by the FDA as a medical device.
                         </p>
                     </div>
@@ -158,7 +154,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
                                 </svg>
                             </div>
-                            <span class="hero-feature-text font-medium">Automated FreeSurfer segmentation pipeline</span>
+                            <span class="text-gray-700 font-medium">Automated FreeSurfer segmentation pipeline</span>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="neuro-blue-light-bg p-3 rounded-lg">
@@ -166,7 +162,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
                                 </svg>
                             </div>
-                            <span class="hero-feature-text font-medium">Precise asymmetry index calculations</span>
+                            <span class="text-gray-700 font-medium">Precise asymmetry index calculations</span>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="neuro-blue-light-bg p-3 rounded-lg">
@@ -174,7 +170,7 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
-                            <span class="hero-feature-text font-medium">Research HS screening from published AutoHS methodology</span>
+                            <span class="text-gray-700 font-medium">Research HS screening from published AutoHS methodology</span>
                         </div>
                     </div>
 
@@ -186,7 +182,7 @@
                             Download NeuroInsight-AutoHS
                         </a>
                         <a href="#workflows"
-                           class="hero-btn-outline px-8 py-4 rounded-xl font-semibold text-lg transition text-center">
+                           class="border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-xl font-semibold text-lg hover:neuro-blue-bg hover:text-white transition text-center">
                             Explore workflows
                         </a>
                     </div>
