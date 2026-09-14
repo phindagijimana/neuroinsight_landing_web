@@ -21,7 +21,7 @@ Public site for the **NeuroInsight** platform—automated neuroimaging **workflo
 
 ## Files
 
-- `index.html` — Home (platform, `#publication` paper → AutoHS / NeuroInsight-AutoHS, workflows, get started)
+- `index.html` — Home (platform, workflows, paper hint in AutoHS card); `research.html` — paper, scripts, citations
 - `research.html` — Publications (Brain Communications / AutoHS)
 - `styles.css` — Shared styles (mobile nav, theme helpers)
 - `site.js` — Mobile menu and scroll animations

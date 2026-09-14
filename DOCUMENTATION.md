@@ -10,14 +10,14 @@ One-page index of **canonical** docs. Prefer these links over copying the same p
 | Workflow | **AutoHS** | [AutoHS GitHub](https://github.com/phindagijimana/AutoHS) |
 | Application | **NeuroInsight-AutoHS** (repo: `neuroinsight_local`) | [Releases](https://github.com/phindagijimana/neuroinsight_local/releases) |
 
-Paper readers: [Software from the publication](https://phindagijimana.github.io/neuroinsight_landing_web/#publication) (AutoHS workflow + NeuroInsight-AutoHS app).
+Paper readers: [Research page](https://phindagijimana.github.io/neuroinsight_landing_web/research.html) (citation, AutoHS, NeuroInsight-AutoHS, MATLAB scripts). Home: [workflows](https://phindagijimana.github.io/neuroinsight_landing_web/#workflows).
 
 ## I want to…
 
 | Goal | Start here |
 |------|------------|
 | Understand the platform | [Landing — About](https://phindagijimana.github.io/neuroinsight_landing_web/#about) |
-| Reproduce the Brain Communications method | [Landing — From the publication](https://phindagijimana.github.io/neuroinsight_landing_web/#publication) · [Research page](https://phindagijimana.github.io/neuroinsight_landing_web/research.html) |
+| Reproduce the Brain Communications method | [Research page](https://phindagijimana.github.io/neuroinsight_landing_web/research.html) · [Home workflows](https://phindagijimana.github.io/neuroinsight_landing_web/#workflows) |
 | Paper analysis scripts (MATLAB, IDEAS) | [research/ideas_project_scripts](https://github.com/phindagijimana/neuroinsight_landing_web/tree/main/research/ideas_project_scripts) |
 | Run **AutoHS** on BIDS data (CLI / HPC) | [AutoHS Read the Docs — quickstart](https://autohs.readthedocs.io/en/latest/quickstart.html) |
 | Install **NeuroInsight-AutoHS** (web / Docker / desktop) | [App README](https://github.com/phindagijimana/neuroinsight_local#deployment-options) · [User Guide hub](https://github.com/phindagijimana/neuroinsight_local/blob/master/docs/USER_GUIDE.md) |

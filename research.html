@@ -98,11 +98,9 @@
             <div class="flex justify-between items-center h-16">
                 <a href="index.html" class="text-2xl font-bold neuro-blue-text">NeuroInsight</a>
                 <div class="hidden md:flex items-center space-x-4 lg:space-x-5 text-sm lg:text-base">
-                    <a href="index.html#publication" class="nav-link">From the paper</a>
                     <a href="index.html#workflows" class="nav-link">Workflows</a>
+                    <a href="research.html" class="nav-link font-semibold neuro-blue-text">From the paper</a>
                     <a href="index.html#about" class="nav-link">About</a>
-                    <a href="research.html" class="nav-link font-semibold neuro-blue-text">Research</a>
-                    <a href="index.html#choose-path" class="nav-link">Get started</a>
                     <a href="index.html#workflows" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Explore workflows</a>
                 </div>
                 <button type="button" id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
@@ -110,12 +108,10 @@
                 </button>
             </div>
             <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2 border-t border-gray-100 pt-3">
-                <a href="index.html#publication" class="block nav-link py-2">From the paper</a>
                 <a href="index.html#workflows" class="block nav-link py-2">Workflows</a>
+                <a href="research.html" class="block nav-link py-2 font-semibold">From the paper</a>
                 <a href="index.html#about" class="block nav-link py-2">About</a>
-                <a href="research.html" class="block nav-link py-2 font-semibold">Research</a>
-                <a href="index.html#choose-path" class="block nav-link py-2">Get started</a>
-                <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="block neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium text-center">Download NeuroInsight-AutoHS</a>
+                <a href="index.html#workflows" class="block neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium text-center">Explore workflows</a>
             </div>
         </div>
     </nav>
@@ -130,28 +126,6 @@
                     Cite the paper for the method; run the same method as the <strong>AutoHS</strong> workflow or the <strong>NeuroInsight-AutoHS</strong> application.
                 </p>
             </div>
-
-            <!-- Software from the paper (quick links for readers) -->
-            <div id="software-from-paper" class="grid md:grid-cols-2 gap-6 mb-12 max-w-4xl mx-auto">
-                <a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer"
-                   class="block bg-white rounded-2xl p-6 shadow-lg border-2 neuro-blue-light-border hover:shadow-xl transition">
-                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Workflow</p>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-1 mb-2">AutoHS</h2>
-                    <p class="text-gray-600 text-sm">BIDS App (incoming) CLI &amp; pipeline from the paper → GitHub &amp; Read the Docs</p>
-                    <span class="inline-block mt-4 neuro-blue-text font-semibold text-sm">Open AutoHS →</span>
-                </a>
-                <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer"
-                   class="block bg-white rounded-2xl p-6 shadow-lg border-2 neuro-blue-light-border hover:shadow-xl transition">
-                    <p class="text-sm font-semibold text-gray-500 uppercase tracking-wide">Application</p>
-                    <h2 class="text-2xl font-bold text-gray-900 mt-1 mb-2">NeuroInsight-AutoHS</h2>
-                    <p class="text-gray-600 text-sm">Web/desktop app on NeuroInsight—same AutoHS method, GUI &amp; PDF reports</p>
-                    <span class="inline-block mt-4 neuro-blue-text font-semibold text-sm">Download app →</span>
-                </a>
-            </div>
-            <p class="text-center text-sm text-gray-500 mb-12">
-                <a href="index.html#publication" class="neuro-blue-text underline">Same overview on the NeuroInsight home page</a>
-                · <a href="https://autohs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="neuro-blue-text underline">AutoHS documentation</a>
-            </p>
 
             <!-- Main Publication -->
             <div class="bg-gradient-to-r from-blue-50 to-white rounded-2xl p-8 shadow-lg border neuro-blue-light-border mb-12">
@@ -224,11 +198,6 @@
                                class="inline-flex items-center justify-center gap-2 border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition flex-1 min-w-[12rem]">
                                 Read full paper (DOI)
                             </a>
-                            <a href="https://github.com/phindagijimana/neuroinsight_landing_web/tree/main/research/ideas_project_scripts"
-                               target="_blank" rel="noopener noreferrer"
-                               class="inline-flex items-center justify-center gap-2 border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition flex-1 min-w-[12rem]">
-                                Paper analysis scripts (MATLAB)
-                            </a>
                             <a href="https://github.com/phindagijimana/AutoHS/blob/main/VALIDATION.md"
                                target="_blank" rel="noopener noreferrer"
                                class="inline-flex items-center justify-center gap-2 border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition flex-1 min-w-[12rem]">
@@ -245,79 +214,10 @@
                 </div>
             </div>
 
-            <!-- Additional Research Resources -->
-            <div class="mb-12">
-                <h2 class="text-3xl font-bold text-gray-900 mb-8 text-center">Additional Research Resources</h2>
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
-                        <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Paper analysis scripts</h3>
-                        <p class="text-gray-600 mb-4">
-                            MATLAB scripts for IDEAS cohort analyses referenced in <em>Brain Communications</em>
-                            (AUC, volumetry, metadata import). Hosted on the NeuroInsight landing repository.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">MATLAB · IDEAS</span>
-                            <a href="https://github.com/phindagijimana/neuroinsight_landing_web/tree/main/research/ideas_project_scripts" target="_blank" rel="noopener noreferrer" class="neuro-blue-text hover:neuro-blue-text font-medium inline-flex items-center gap-1">
-                                View scripts →
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
-                        <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Clinical Validation Study</h3>
-                        <p class="text-gray-600 mb-4">
-                            Comparative analysis of automated vs manual hippocampal segmentation accuracy.
-                            This study validates NeuroInsight's performance against expert radiologist annotations
-                            across diverse patient populations and scanner types.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">Status: Completed</span>
-                            <a href="https://doi.org/10.1093/braincomms/fcag320" target="_blank" rel="noopener noreferrer" class="neuro-blue-text hover:neuro-blue-text font-medium inline-flex items-center gap-1">
-                                View paper →
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
-                        <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
-                            <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/>
-                            </svg>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-900 mb-3">Technical Methodology</h3>
-                        <p class="text-gray-600 mb-4">
-                            Detailed description of FreeSurfer pipeline integration and asymmetry algorithms.
-                            Technical documentation covering the complete processing workflow from MRI input
-                            to clinical report generation.
-                        </p>
-                        <div class="flex items-center justify-between">
-                            <span class="text-sm text-gray-500">Status: Available</span>
-                            <a href="https://autohs.readthedocs.io" target="_blank" rel="noopener noreferrer" class="neuro-blue-text hover:neuro-blue-text font-medium inline-flex items-center gap-1">
-                                AutoHS docs →
-                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <p class="text-center text-sm text-gray-500 mb-12 max-w-2xl mx-auto">
+                Platform overview: <a href="index.html#workflows" class="neuro-blue-text underline">NeuroInsight workflows on the home page</a>
+                · Methods &amp; theory: <a href="https://autohs.readthedocs.io/en/latest/theory.html" target="_blank" rel="noopener noreferrer" class="neuro-blue-text underline">AutoHS Read the Docs</a>
+            </p>
 
             <!-- Research Impact -->
             <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-8 border neuro-blue-light-border">
