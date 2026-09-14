@@ -3,9 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NeuroInsight - Modal Research Access - Automated Hippocampal Volumetric Analysis</title>
-    <meta name="description" content="Advanced neuroimaging platform for automated hippocampal segmentation and asymmetry analysis from T1-weighted MRI scans. Clinical-grade HS classification with FreeSurfer.">
+    <title>NeuroInsight — Automated Neuroimaging Workflows</title>
+    <meta name="description" content="NeuroInsight is a research platform for neuroimaging workflows. AutoHS is the hippocampal asymmetry workflow; NeuroInsight-AutoHS is the application to run it locally.">
+    <meta property="og:title" content="NeuroInsight — Automated Neuroimaging Workflows">
+    <meta property="og:description" content="Research platform for neuroimaging workflows. AutoHS hippocampal asymmetry; NeuroInsight-AutoHS application.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://phindagijimana.github.io/neuroinsight_landing_web/">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -91,31 +96,27 @@
     <!-- Navigation -->
     <nav class="bg-white shadow-lg border-b neuro-blue-light-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0">
-                        <h1 class="text-2xl font-bold neuro-blue-text">NeuroInsight</h1>
-                    </div>
+            <div class="flex justify-between items-center h-16">
+                <a href="index.html" class="text-2xl font-bold neuro-blue-text">NeuroInsight</a>
+                <div class="hidden md:flex items-center space-x-4 lg:space-x-5 text-sm lg:text-base">
+                    <a href="#workflows" class="nav-link">Workflows</a>
+                    <a href="#features" class="nav-link">Features</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="research.html" class="nav-link">Research</a>
+                    <a href="#contact" class="nav-link">Get started</a>
+                    <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Download</a>
                 </div>
-                <div class="flex items-center space-x-8">
-                    <a href="#features" class="text-gray-700 hover:neuro-blue-text font-medium transition">Features</a>
-                    <a href="#about" class="text-gray-700 hover:neuro-blue-text font-medium transition">About</a>
-                    <a href="research.html" class="text-gray-700 hover:neuro-blue-text font-medium transition">Research</a>
-                    <a href="#contact" class="text-gray-700 hover:neuro-blue-text font-medium transition">Contact</a>
-                    <a href="https://github.com/phindagijimana/neuroinsight_local"
-                       target="_blank"
-                       class="neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium neuro-blue-hover transition flex items-center gap-2">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                        </svg>
-                        GitHub
-                    </a>
-                    <a href="https://www.urmc.rochester.edu/"
-                       target="_blank"
-                       class="neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium neuro-blue-hover transition">
-                        URMC Access
-                    </a>
-                </div>
+                <button type="button" id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
+                </button>
+            </div>
+            <div id="mobile-menu" class="hidden md:hidden pb-4 space-y-2 border-t border-gray-100 pt-3">
+                <a href="#workflows" class="block nav-link py-2">Workflows</a>
+                <a href="#features" class="block nav-link py-2">Features</a>
+                <a href="#about" class="block nav-link py-2">About</a>
+                <a href="research.html" class="block nav-link py-2">Research</a>
+                <a href="#contact" class="block nav-link py-2">Get started</a>
+                <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="block neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium text-center">Download NeuroInsight-AutoHS</a>
             </div>
         </div>
     </nav>
@@ -129,13 +130,16 @@
                     <div class="space-y-4">
                         <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
                             Automated
-                            <span class="neuro-blue-text">Hippocampal</span>
-                            Volumetric Analysis
+                            <span class="neuro-blue-text">Neuroimaging</span>
+                            Workflows
                         </h1>
                         <p class="text-xl text-gray-600 leading-relaxed">
-                            Advanced neuroimaging platform for processing T1-weighted MRI scans,
-                            computing hippocampal asymmetry indices, and detecting hippocampal sclerosis
-                            with clinical-grade precision and efficiency.
+                            <strong>NeuroInsight</strong> is a research platform for reproducible neuroimaging pipelines.
+                            <strong>AutoHS</strong> is the hippocampal asymmetry workflow for T1-weighted MRI;
+                            <strong>NeuroInsight-AutoHS</strong> is the application that runs AutoHS on your infrastructure—with local processing and open source releases.
+                        </p>
+                        <p class="text-sm text-gray-500 leading-relaxed">
+                            Research software only—not cleared or approved by the FDA as a medical device.
                         </p>
                     </div>
 
@@ -163,20 +167,20 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                                 </svg>
                             </div>
-                            <span class="text-gray-700 font-medium">Clinical-grade HS classification</span>
+                            <span class="text-gray-700 font-medium">Research HS screening from published AutoHS methodology</span>
                         </div>
                     </div>
 
                     <!-- CTA Buttons -->
                     <div class="flex flex-col sm:flex-row gap-4 pt-4">
-                        <a href="#features"
+                        <a href="https://github.com/phindagijimana/neuroinsight_local/releases"
+                           target="_blank" rel="noopener noreferrer"
                            class="neuro-blue-bg text-white px-8 py-4 rounded-xl font-semibold text-lg neuro-blue-hover transition shadow-lg hover:shadow-xl text-center">
-                            Learn More
+                            Download NeuroInsight-AutoHS
                         </a>
-                        <a href="https://github.com/phindagijimana/neuroinsight_local"
-                           target="_blank"
+                        <a href="#workflows"
                            class="border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-xl font-semibold text-lg hover:neuro-blue-bg hover:text-white transition text-center">
-                            View on GitHub
+                            Explore workflows
                         </a>
                     </div>
                 </div>
@@ -239,20 +243,59 @@
         </div>
     </section>
 
+    <!-- Workflows Section -->
+    <section id="workflows" class="py-12 bg-white border-t border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Workflows on NeuroInsight</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Each workflow is a validated scientific pipeline. Each tool is named <strong>NeuroInsight-&lt;Workflow&gt;</strong>.
+                    Additional workflows are planned for the platform.
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-2xl p-8 shadow-lg border neuro-blue-light-border">
+                    <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-4">
+                        <div>
+                            <p class="text-sm font-semibold neuro-blue-text uppercase tracking-wide">Available now</p>
+                            <h3 class="text-2xl font-bold text-gray-900 mt-1">AutoHS</h3>
+                            <p class="text-gray-600 mt-2">Hippocampal volumetry and asymmetry index from T1-weighted MRI for epilepsy research and HS screening studies.</p>
+                        </div>
+                        <span class="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium neuro-blue-light-bg neuro-blue-text">Workflow</span>
+                    </div>
+                    <p class="text-sm text-gray-600 mb-6">
+                        Method: <a href="https://doi.org/10.1093/braincomms/fcag320" target="_blank" rel="noopener noreferrer" class="neuro-blue-text font-medium underline">Brain Communications (2026)</a>
+                        · Pipeline: <a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer" class="neuro-blue-text font-medium underline">AutoHS on GitHub</a>
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer"
+                           class="neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition text-center">
+                            NeuroInsight-AutoHS — Download
+                        </a>
+                        <a href="https://github.com/phindagijimana/neuroinsight_local" target="_blank" rel="noopener noreferrer"
+                           class="border-2 neuro-blue-border neuro-blue-text px-6 py-3 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition text-center">
+                            Source &amp; docs
+                        </a>
+                    </div>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-6">More NeuroInsight workflows will be listed here as they are released.</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section id="features" class="py-12 bg-white">
+    <section id="features" class="py-12 hero-gradient">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-8">
-                <h2 class="text-3xl font-bold text-gray-900 mb-3">Advanced Neuroimaging Platform</h2>
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">NeuroInsight-AutoHS capabilities</h2>
                 <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-                    NeuroInsight delivers clinical-grade automated analysis of T1-weighted MRI scans,
-                    providing precise hippocampal volumetry and asymmetry assessment for neurological research and clinical applications.
+                    Features of the AutoHS application tool—automated analysis for research cohorts with local data processing.
                 </p>
             </div>
 
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Feature Cards -->
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
@@ -262,7 +305,7 @@
                     <p class="text-gray-600">Industry-standard automated cortical reconstruction and subcortical segmentation for reliable hippocampal identification.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
@@ -272,27 +315,27 @@
                     <p class="text-gray-600">Precise measurement of left and right hippocampal volumes in mm³ with statistical reliability assessment.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
                         </svg>
                     </div>
                     <h3 class="text-xl font-bold text-gray-900 mb-2">Asymmetry Detection</h3>
-                    <p class="text-gray-600">Automated calculation of hippocampal asymmetry indices with validated clinical thresholds for HS diagnosis.</p>
+                    <p class="text-gray-600">Automated hippocampal asymmetry indices using thresholds described in the AutoHS publication for research screening.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">HIPAA Compliant</h3>
-                    <p class="text-gray-600">Ensured security and privacy for patient data since all processing happens locally without external data transmission.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Local processing</h3>
+                    <p class="text-gray-600">MRI data stay on your machine or your chosen infrastructure—designed for privacy-conscious research environments (not a HIPAA attestation).</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
@@ -302,14 +345,14 @@
                     <p class="text-gray-600">Automated pipeline delivers results faster without manual intervention, typically completing analysis within hours.</p>
                 </div>
 
-                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
+                <div class="fade-in-card bg-gradient-to-br from-blue-50 to-white rounded-xl p-6 shadow-lg border neuro-blue-light-border hover:shadow-xl transition">
                     <div class="neuro-blue-light-bg w-12 h-12 rounded-lg flex items-center justify-center mb-4">
                         <svg class="w-6 h-6 neuro-blue-text" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                         </svg>
                     </div>
-                    <h3 class="text-xl font-bold text-gray-900 mb-2">Clinical Validation</h3>
-                    <p class="text-gray-600">Validated asymmetry thresholds for hippocampal sclerosis detection with clinical accuracy and reliability.</p>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Peer-reviewed method</h3>
+                    <p class="text-gray-600">Built on the AutoHS workflow published in <em>Brain Communications</em>; independent validation is encouraged.</p>
                 </div>
             </div>
         </div>
@@ -323,13 +366,13 @@
                     <h2 class="text-4xl font-bold text-gray-900 mb-6">What is NeuroInsight?</h2>
                     <div class="space-y-3 text-lg text-gray-600">
                         <p>
-                            NeuroInsight automates neuroimaging analysis with clinical-grade precision. Currently focused on T1-weighted MRI hippocampal volumetry, it provides automated detection of hippocampal sclerosis (HS) for neurological research and clinical applications.
+                            <strong>NeuroInsight</strong> is a research platform that hosts multiple neuroimaging <strong>workflows</strong>—each with its own scientific pipeline and its own application tool (<strong>NeuroInsight-AutoHS</strong> for AutoHS today; more tools planned).
                         </p>
                         <p>
-                            Using FreeSurfer's segmentation methods, NeuroInsight identifies hippocampal regions, calculates asymmetry indices, and classifies pathology. Future expansion will include additional neuroimaging analysis solutions.
+                            <strong>AutoHS</strong> is the hippocampal asymmetry workflow (FreeSurfer segmentation, asymmetry index, research HS screening). <strong>NeuroInsight-AutoHS</strong> wraps that workflow in a web/desktop experience with job management and PDF reports.
                         </p>
                         <p>
-                            Built for security and privacy, all processing happens locally with HIPAA compliance. The automated pipeline delivers results significantly faster than manual methods.
+                            Processing runs locally on your hardware. This is research software—not FDA-cleared—and outputs require expert interpretation.
                         </p>
                     </div>
 
@@ -388,30 +431,29 @@
     <!-- Contact Section -->
     <section id="contact" class="py-12 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold text-gray-900 mb-3">Ready to Get Started?</h2>
+            <h2 class="text-3xl font-bold text-gray-900 mb-3">Ready to get started?</h2>
             <p class="text-lg text-gray-600 mb-6">
-                Access NeuroInsight through the University of Rochester Medical Center
-                or explore the source code on GitHub to set up your own instance.
+                Install <strong>NeuroInsight-AutoHS</strong> to run the AutoHS workflow, or use the <strong>AutoHS</strong> BIDS App directly from the pipeline repository.
             </p>
 
             <div class="flex flex-col sm:flex-row gap-3 justify-center">
-                <a href="https://www.urmc.rochester.edu/"
-                   target="_blank"
+                <a href="https://github.com/phindagijimana/neuroinsight_local/releases"
+                   target="_blank" rel="noopener noreferrer"
                    class="neuro-blue-bg text-white px-8 py-4 rounded-xl font-semibold text-lg neuro-blue-hover transition shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"/>
-                    </svg>
-                    Access via URMC
+                    Download NeuroInsight-AutoHS
                 </a>
-                <a href="https://github.com/phindagijimana/neuroinsight_local"
-                   target="_blank"
+                <a href="https://github.com/phindagijimana/AutoHS"
+                   target="_blank" rel="noopener noreferrer"
                    class="border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-xl font-semibold text-lg hover:neuro-blue-bg hover:text-white transition shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
                     <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                     </svg>
-                    View on GitHub
+                    AutoHS pipeline (GitHub)
                 </a>
             </div>
+            <p class="text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+                Developed at the <a href="https://www.urmc.rochester.edu/" target="_blank" rel="noopener noreferrer" class="neuro-blue-text underline">University of Rochester Medical Center</a>.
+            </p>
 
             <div class="mt-12 pt-8 border-t border-gray-200">
                 <p class="text-gray-500">
@@ -428,15 +470,16 @@
                 <div>
                     <h3 class="text-xl font-bold mb-4">NeuroInsight</h3>
                     <p class="text-gray-400">
-                        Automated hippocampal volumetric analysis platform for neurological research and clinical applications.
+                        Research platform for neuroimaging workflows. NeuroInsight-AutoHS runs the AutoHS pipeline.
                     </p>
                 </div>
                 <div>
                     <h4 class="font-semibold mb-4">Resources</h4>
                     <ul class="space-y-2 text-gray-400">
-                        <li><a href="https://github.com/phindagijimana/neuroinsight_local" target="_blank" class="hover:text-white transition">Source Code</a></li>
-                        <li><a href="https://surfer.nmr.mgh.harvard.edu/" target="_blank" class="hover:text-white transition">FreeSurfer</a></li>
-                        <li><a href="https://www.urmc.rochester.edu/" target="_blank" class="hover:text-white transition">URMC</a></li>
+                        <li><a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">NeuroInsight-AutoHS releases</a></li>
+                        <li><a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">AutoHS workflow</a></li>
+                        <li><a href="research.html" class="hover:text-white transition">Publications</a></li>
+                        <li><a href="https://surfer.nmr.mgh.harvard.edu/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">FreeSurfer</a></li>
                     </ul>
                 </div>
                 <div>
@@ -454,63 +497,6 @@
         </div>
     </footer>
 
-    <script>
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                }
-            });
-        });
-
-        // Add intersection observer for fade-in animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        // Observe feature cards for animations
-        document.querySelectorAll('.bg-gradient-to-br').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(20px)';
-            card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(card);
-        });
-
-        // Handle initial page load with hash
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.location.hash) {
-                const sectionId = window.location.hash.substring(1);
-                const targetSection = document.getElementById(sectionId);
-                if (targetSection) {
-                    setTimeout(() => {
-                        targetSection.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }, 100);
-                }
-            }
-        });
-
-    </script>
-
+    <script src="site.js"></script>
 </body>
 </html>
-<!-- Deployment trigger: Sat Jan 10 00:29:07 UTC 2026 -->
-<!-- Workflow trigger: 2026-01-10 01:27:34 -->

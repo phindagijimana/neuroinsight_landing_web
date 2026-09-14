@@ -1,35 +1,29 @@
 # NeuroInsight Landing Page
 
 ## Overview
-Professional landing website for NeuroInsight - automated hippocampal volumetric analysis platform for T1-weighted MRI scans.
+
+Marketing and orientation site for **NeuroInsight**—a research platform for neuroimaging workflows. **AutoHS** (hippocampal asymmetry / HS screening) is the first workflow; **NeuroInsight-AutoHS** is the deployable tool.
 
 ## Pages
-- `index.html` - Main landing page with hero, features, about, and contact sections
-- `research.html` - Dedicated research publications page (loads as separate page, URL shows #research)
 
-## Key Features
-- Automated FreeSurfer integration for cortical reconstruction
-- Hippocampal volumetry and asymmetry analysis
-- Clinical HS classification with validated thresholds
-- HIPAA compliant local processing
-- Responsive design with NeuroInsight branding (#003d7a)
+- `index.html` — Platform overview, AutoHS workflow card, NeuroInsight-AutoHS features
+- `research.html` — Brain Communications (2026) publication and software links
+
+## Key messages
+
+- NeuroInsight = platform (more workflows planned)
+- AutoHS = citable workflow / BIDS App
+- NeuroInsight-AutoHS = web & desktop application
+- Research software; local processing; not FDA-cleared
 
 ## Technologies
-- HTML5 with semantic structure
-- Tailwind CSS for responsive design
-- Custom CSS for NeuroInsight brand colors
-- SVG graphics for brain visualization
-- JavaScript for smooth scrolling
 
-## Links
-- GitHub: https://github.com/phindagijimana/neuroinsight_local
-- URMC: https://www.urmc.rochester.edu/
-- Research: Placeholder links (update when published)
+- HTML5, Tailwind CSS (CDN), `styles.css`, `site.js`
+- GitHub Pages deployment
 
-## Deployment
-- GitHub Pages ready
-- Repository: neuroinsight_landing_web
-- Live URL: https://phindagijimana.github.io/neuroinsight_landing_web/
+## Live URL
+
+https://phindagijimana.github.io/neuroinsight_landing_web/
 
 ---
 
