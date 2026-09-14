@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NeuroInsight — Research &amp; Publications</title>
     <meta name="description" content="Publications for the AutoHS workflow on the NeuroInsight platform, including Brain Communications (2026).">
+    <meta name="theme-color" content="#003d7a">
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,11 +45,6 @@
             border-color: rgba(0, 61, 122, 0.2);
         }
 
-        /* Gradient backgrounds */
-        .hero-gradient {
-            background: linear-gradient(135deg, #f8fafc 0%, #ffffff 50%, #f1f5f9 100%);
-        }
-
         /* Pulse animation for brain elements */
         @keyframes brainPulse {
             0%, 100% { opacity: 0.6; }
@@ -75,7 +71,7 @@
         }
 
         ::-webkit-scrollbar-track {
-            background: #f1f5f9;
+            background: #002850;
         }
 
         ::-webkit-scrollbar-thumb {
@@ -88,7 +84,7 @@
         }
     </style>
 </head>
-<body class="hero-gradient">
+<body>
     <!-- Navigation -->
     <nav class="bg-white shadow-lg border-b neuro-blue-light-border">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -118,7 +114,7 @@
     </nav>
 
     <!-- Research Section -->
-    <section id="research" class="py-16 bg-white">
+    <section id="research" class="py-16 section-surface">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-12">
                 <h1 class="text-4xl font-bold text-gray-900 mb-4">Research & Publications</h1>
