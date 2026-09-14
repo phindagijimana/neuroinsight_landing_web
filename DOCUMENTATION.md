@@ -18,6 +18,7 @@ Paper readers: [Software from the publication](https://phindagijimana.github.io/
 |------|------------|
 | Understand the platform | [Landing — About](https://phindagijimana.github.io/neuroinsight_landing_web/#about) |
 | Reproduce the Brain Communications method | [Landing — From the publication](https://phindagijimana.github.io/neuroinsight_landing_web/#publication) · [Research page](https://phindagijimana.github.io/neuroinsight_landing_web/research.html) |
+| Paper analysis scripts (MATLAB, IDEAS) | [research/ideas_project_scripts](https://github.com/phindagijimana/neuroinsight_landing_web/tree/main/research/ideas_project_scripts) |
 | Run **AutoHS** on BIDS data (CLI / HPC) | [AutoHS Read the Docs — quickstart](https://autohs.readthedocs.io/en/latest/quickstart.html) |
 | Install **NeuroInsight-AutoHS** (web / Docker / desktop) | [App README](https://github.com/phindagijimana/neuroinsight_local#deployment-options) · [User Guide hub](https://github.com/phindagijimana/neuroinsight_local/blob/master/docs/USER_GUIDE.md) |
 | Cite software or the paper | [AutoHS — citation](https://autohs.readthedocs.io/en/latest/citation.html) |
