@@ -106,8 +106,8 @@
                     <a href="#features" class="nav-link">Features</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="research.html" class="nav-link">Research</a>
-                    <a href="#contact" class="nav-link">Get started</a>
-                    <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Download</a>
+                    <a href="#choose-path" class="nav-link">Get started</a>
+                    <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="neuro-blue-bg text-white px-3 py-2 rounded-lg font-medium neuro-blue-hover transition">Download NeuroInsight-AutoHS</a>
                 </div>
                 <button type="button" id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
                     <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg>
@@ -118,7 +118,7 @@
                 <a href="#features" class="block nav-link py-2">Features</a>
                 <a href="#about" class="block nav-link py-2">About</a>
                 <a href="research.html" class="block nav-link py-2">Research</a>
-                <a href="#contact" class="block nav-link py-2">Get started</a>
+                <a href="#choose-path" class="block nav-link py-2">Get started</a>
                 <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="block neuro-blue-bg text-white px-4 py-2 rounded-lg font-medium text-center">Download NeuroInsight-AutoHS</a>
             </div>
         </div>
@@ -139,7 +139,7 @@
                         <p class="text-xl text-gray-600 leading-relaxed">
                             <strong>NeuroInsight</strong> is a research platform for reproducible neuroimaging pipelines.
                             <strong>AutoHS</strong> is the hippocampal asymmetry workflow for T1-weighted MRI;
-                            <strong>NeuroInsight-AutoHS</strong> is the application that runs AutoHS on your infrastructure—with local processing and open source releases.
+                            <strong>NeuroInsight-AutoHS</strong> is the application that runs AutoHS on your infrastructure—with local processing and publicly available, source-available releases.
                         </p>
                         <p class="text-sm text-gray-500 leading-relaxed">
                             Research software only—not cleared or approved by the FDA as a medical device.
@@ -273,18 +273,69 @@
                         Method: <a href="https://doi.org/10.1093/braincomms/fcag320" target="_blank" rel="noopener noreferrer" class="neuro-blue-text font-medium underline">Brain Communications (2026)</a>
                         · Pipeline: <a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer" class="neuro-blue-text font-medium underline">AutoHS on GitHub</a>
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-3">
+                    <div class="flex flex-col sm:flex-row flex-wrap gap-3">
                         <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer"
                            class="neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition text-center">
                             NeuroInsight-AutoHS — Download
                         </a>
                         <a href="https://github.com/phindagijimana/neuroinsight_local" target="_blank" rel="noopener noreferrer"
                            class="border-2 neuro-blue-border neuro-blue-text px-6 py-3 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition text-center">
-                            Source &amp; docs
+                            App source (<code class="text-sm">neuroinsight_local</code>)
+                        </a>
+                        <a href="https://autohs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer"
+                           class="border-2 neuro-blue-border neuro-blue-text px-6 py-3 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition text-center">
+                            AutoHS docs &amp; CLI
                         </a>
                     </div>
                 </div>
                 <p class="text-center text-sm text-gray-500 mt-6">More NeuroInsight workflows will be listed here as they are released.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose your path -->
+    <section id="choose-path" class="py-12 section-soft">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-900 mb-3">Choose your path</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Both options run the same <strong>AutoHS</strong> workflow; pick the interface that matches your data and environment.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl p-8 shadow-lg border neuro-blue-light-border">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">NeuroInsight-AutoHS</h3>
+                    <p class="text-sm neuro-blue-text font-semibold mb-3">Web, desktop, or Docker app</p>
+                    <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                        <li>• Upload individual T1-weighted NIfTI scans</li>
+                        <li>• Job dashboard, PDF reports, local deployment</li>
+                        <li>• Best for clinicians and labs wanting a GUI</li>
+                    </ul>
+                    <a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer"
+                       class="block text-center neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition">
+                        Download NeuroInsight-AutoHS
+                    </a>
+                    <p class="text-xs text-gray-500 mt-3 text-center">
+                        GitHub repo: <a href="https://github.com/phindagijimana/neuroinsight_local" class="neuro-blue-text underline" target="_blank" rel="noopener noreferrer"><code>neuroinsight_local</code></a>
+                    </p>
+                </div>
+                <div class="bg-white rounded-2xl p-8 shadow-lg border neuro-blue-light-border">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AutoHS pipeline</h3>
+                    <p class="text-sm neuro-blue-text font-semibold mb-3">BIDS App (incoming) CLI</p>
+                    <ul class="text-gray-600 text-sm space-y-2 mb-6">
+                        <li>• BIDS datasets, HPC, Apptainer/Singularity</li>
+                        <li>• <code class="text-xs bg-gray-100 px-1 rounded">run.py</code> and container workflows</li>
+                        <li>• Best for reproducibility and batch cohorts</li>
+                    </ul>
+                    <a href="https://autohs.readthedocs.io/en/latest/quickstart.html" target="_blank" rel="noopener noreferrer"
+                       class="block text-center border-2 neuro-blue-border neuro-blue-text px-6 py-3 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition">
+                        AutoHS documentation
+                    </a>
+                    <p class="text-xs text-gray-500 mt-3 text-center">
+                        Code: <a href="https://github.com/phindagijimana/AutoHS" class="neuro-blue-text underline" target="_blank" rel="noopener noreferrer">AutoHS on GitHub</a>
+                        · Not yet on the official BIDS Apps directory
+                    </p>
+                </div>
             </div>
         </div>
     </section>
@@ -382,16 +433,21 @@
                         </p>
                     </div>
 
-                    <div class="mt-8">
+                    <div class="mt-8 flex flex-col sm:flex-row flex-wrap gap-3">
                         <a href="https://github.com/phindagijimana/neuroinsight_local"
-                           target="_blank"
-                           class="inline-flex items-center gap-2 neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition">
-                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                            </svg>
-                            Explore Source Code
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center gap-2 neuro-blue-bg text-white px-6 py-3 rounded-lg font-semibold neuro-blue-hover transition">
+                            NeuroInsight-AutoHS source
+                        </a>
+                        <a href="https://github.com/phindagijimana/AutoHS"
+                           target="_blank" rel="noopener noreferrer"
+                           class="inline-flex items-center justify-center gap-2 border-2 neuro-blue-border neuro-blue-text px-6 py-3 rounded-lg font-semibold hover:neuro-blue-bg hover:text-white transition">
+                            AutoHS pipeline source
                         </a>
                     </div>
+                    <p class="text-sm text-gray-500 mt-3">
+                        Application releases live in GitHub repo <code class="text-xs bg-gray-100 px-1 rounded">neuroinsight_local</code> (product name <strong>NeuroInsight-AutoHS</strong>).
+                    </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-8 shadow-xl border neuro-blue-light-border">
@@ -448,16 +504,18 @@
                    class="neuro-blue-bg text-white px-8 py-4 rounded-xl font-semibold text-lg neuro-blue-hover transition shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
                     Download NeuroInsight-AutoHS
                 </a>
-                <a href="https://github.com/phindagijimana/AutoHS"
+                <a href="https://autohs.readthedocs.io/en/latest/quickstart.html"
                    target="_blank" rel="noopener noreferrer"
                    class="border-2 neuro-blue-border neuro-blue-text px-8 py-4 rounded-xl font-semibold text-lg hover:neuro-blue-bg hover:text-white transition shadow-lg hover:shadow-xl inline-flex items-center justify-center gap-2">
-                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                    </svg>
-                    AutoHS pipeline (GitHub)
+                    AutoHS CLI quick start
                 </a>
             </div>
-            <p class="text-sm text-gray-500 mt-8 max-w-2xl mx-auto">
+            <p class="text-sm text-gray-500 mt-4 max-w-2xl mx-auto">
+                Application GitHub repository: <a href="https://github.com/phindagijimana/neuroinsight_local" class="neuro-blue-text underline" target="_blank" rel="noopener noreferrer"><code>neuroinsight_local</code></a>
+                (product name <strong>NeuroInsight-AutoHS</strong>).
+                Pipeline: <a href="https://github.com/phindagijimana/AutoHS" class="neuro-blue-text underline" target="_blank" rel="noopener noreferrer">AutoHS</a>.
+            </p>
+            <p class="text-sm text-gray-500 mt-4 max-w-2xl mx-auto">
                 Developed at the <a href="https://www.urmc.rochester.edu/" target="_blank" rel="noopener noreferrer" class="neuro-blue-text underline">University of Rochester Medical Center</a>.
             </p>
 
@@ -484,7 +542,9 @@
                     <ul class="space-y-2 text-gray-400">
                         <li><a href="https://github.com/phindagijimana/neuroinsight_local/releases" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">NeuroInsight-AutoHS releases</a></li>
                         <li><a href="https://github.com/phindagijimana/AutoHS" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">AutoHS workflow</a></li>
+                        <li><a href="https://autohs.readthedocs.io/en/latest/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">AutoHS documentation</a></li>
                         <li><a href="research.html" class="hover:text-white transition">Publications</a></li>
+                        <li><a href="https://github.com/phindagijimana/neuroinsight_landing_web/blob/main/README.md#platform-naming" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">Platform naming guide</a></li>
                         <li><a href="https://surfer.nmr.mgh.harvard.edu/" target="_blank" rel="noopener noreferrer" class="hover:text-white transition">FreeSurfer</a></li>
                     </ul>
                 </div>

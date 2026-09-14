@@ -13,7 +13,7 @@ Public site for the **NeuroInsight** platform—automated neuroimaging **workflo
 |-------|------|------|
 | Platform | **NeuroInsight** | This site |
 | Workflow | **AutoHS** | https://github.com/phindagijimana/AutoHS |
-| Tool | **NeuroInsight-AutoHS** | https://github.com/phindagijimana/neuroinsight_local |
+| Tool | **NeuroInsight-AutoHS** (GitHub repo [`neuroinsight_local`](https://github.com/phindagijimana/neuroinsight_local)) | Releases and app source |
 
 ## Files
 
